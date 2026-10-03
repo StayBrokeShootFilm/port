@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Jonathan Ramirez · Photography Portfolio</title>
+  <meta name="description" content="Photography portfolio of Jonathan Ramirez, San Francisco.">
+  <style>
+    :root {
+      --bg: #fafaf8;
+      --text: #1a1816;
+      --muted: #6b655f;
+      --line: #e3e0da;
+      --tile: #e9e6e0;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: Georgia, "Times New Roman", serif;
+      line-height: 1.6;
+    }
+    .wrap { max-width: 960px; margin: 0 auto; padding: 0 20px; }
+    nav {
+      font-family: -apple-system, "Helvetica Neue", Arial, sans-serif;
+      font-size: 14px;
+      padding: 20px 0;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 12px;
+      border-bottom: 1px solid var(--line);
+    }
+    nav a { color: var(--muted); text-decoration: none; margin-left: 20px; }
+    nav a:first-child { margin-left: 0; color: var(--text); }
+    nav a:hover { color: var(--text); }
+    .links { display: flex; flex-wrap: wrap; }
+    .links a:first-child { margin-left: 0; }
+    .intro { padding: 72px 0 48px; max-width: 640px; }
+    h1 { font-size: clamp(34px, 7vw, 52px); line-height: 1.1; font-weight: normal; margin: 0 0 16px; }
+    .intro p { font-size: 19px; color: var(--muted); margin: 0; }
+    .project { padding: 48px 0; border-top: 1px solid var(--line); }
+    .project .num {
+      font-family: -apple-system, "Helvetica Neue", Arial, sans-serif;
+      font-size: 12px;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin: 0 0 8px;
+    }
+    .project h2 { font-size: 30px; font-weight: normal; margin: 0 0 12px; }
+    .project .desc { max-width: 640px; color: var(--muted); margin: 0 0 28px; }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 12px;
+    }
+    .grid { align-items: start; }
+    .grid figure { margin: 0; background: var(--tile); min-height: 160px; }
+    .grid img { width: 100%; height: auto; display: block; }
+    #contact { padding: 56px 0 72px; border-top: 1px solid var(--line); }
+    #contact h2 { font-size: 26px; font-weight: normal; margin: 0 0 12px; }
+    #contact p { margin: 0 0 8px; font-size: 18px; }
+    a { color: var(--text); text-underline-offset: 3px; }
+    a:hover { color: var(--muted); }
+    footer {
+      font-family: -apple-system, "Helvetica Neue", Arial, sans-serif;
+      font-size: 13px;
+      color: var(--muted);
+      padding-bottom: 40px;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <nav>
+      <a href="#top">Jonathan Ramirez</a>
+      <div class="links">
+        <a href="#project-1">Project 1</a>
+        <a href="#project-2">Project 2</a>
+        <a href="#project-3">Project 3</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+
+    <div class="intro" id="top">
+      <h1>Photography by Jonathan Ramirez</h1>
+      <p>Photographer based in San Francisco. Three selected projects below.</p>
+    </div>
+
+    <!-- EDIT: change the title, description, and image file names for each project. -->
+    <!-- Put your photos in an "images" folder next to this file. -->
+
+    <section class="project" id="project-1">
+      <p class="num">Project 01</p>
+      <h2>PhotoAlliance Community Benefit Dinner</h2>
+      <p class="desc">Event photography for PhotoAlliance's 2025 benefit dinner at the Sunnyside Conservatory in San Francisco, June 5, 2025. The evening raised funds for the nonprofit's lecture series. <a href="https://www.photoalliance.org/2025-photoalliance-community-benefit-dinner">View the event page</a>.</p>
+      <div class="grid">
+        <figure><img src="benefit-dinner-01.jpg" alt="Guests laughing and mingling beside a table with a bouquet of flowers at the benefit dinner" loading="lazy"></figure>
+        <figure><img src="benefit-dinner-02.jpg" alt="Two smiling guests posing for a portrait on the conservatory patio" loading="lazy"></figure>
+        <figure><img src="benefit-dinner-03.jpg" alt="Wide view of guests seated at round tables inside the wood-framed conservatory" loading="lazy"></figure>
+      </div>
+    </section>
+
+    <section class="project" id="project-2">
+      <p class="num">Project 02</p>
+      <h2>East Bay Photo Collective Art Fundraiser</h2>
+      <p class="desc">Black-and-white photographs from the 2019 art fundraiser for the <a href="https://www.ebpco.org/">East Bay Photo Collective</a>, an Oakland-based photography nonprofit.</p>
+      <div class="grid">
+        <figure><img src="ebpco-fundraiser-01.jpg.jpg" alt="Two guests in leather jackets leaning close together while a woman in hoop earrings looks off to the side in a crowded room" loading="lazy"></figure>
+        <figure><img src="ebpco-fundraiser-02.jpg.jpg" alt="A person with curly blond hair gesturing toward two seated guests who look into the camera" loading="lazy"></figure>
+        <figure><img src="ebpco-fundraiser-03.jpg.jpg" alt="A woman in a shaggy hooded jacket and a bearded man in a beanie at a crowded gallery reception" loading="lazy"></figure>
+        <figure><img src="ebpco-fundraiser-04.jpg.jpg" alt="A wide-eyed woman in the foreground with a hooded figure behind her and a blond woman in profile at right" loading="lazy"></figure>
+      </div>
+    </section>
+
+    <section class="project" id="project-3">
+      <p class="num">Project 03</p>
+      <h2>Fine Art Work</h2>
+      <p class="desc">A selection of black-and-white portraits. More on Instagram at <a href="https://www.instagram.com/jonscamerashy/">@jonscamerashy</a>.</p>
+      <div class="grid">
+        <figure><img src="fine-art-01.jpg.jpg" alt="Portrait of a young man with spiked hair and a leather jacket, a cigarette in his mouth, outdoors at dusk" loading="lazy"></figure>
+        <figure><img src="fine-art-02.jpg.jpg" alt="A person in a hooded sweatshirt pressing both hands to their face, standing under bare trees at twilight" loading="lazy"></figure>
+        <figure><img src="Fine-art-03.jpg" alt="Close portrait of a freckled boy with tousled hair looking into the camera" loading="lazy"></figure>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p><a href="mailto:ramirezjonathan295@gmail.com">ramirezjonathan295@gmail.com</a></p>
+      <p><a href="tel:+17073669401">707-366-9401</a></p>
+      <p><a href="https://www.instagram.com/jonscamerashy/">Instagram @jonscamerashy</a></p>
+    </section>
+
+    <footer>&copy; 2026 Jonathan Ramirez</footer>
+  </div>
+</body>
+</html>
